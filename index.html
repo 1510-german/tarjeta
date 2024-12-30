@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitacion a Boda</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="contornofull">
+        <div class="contorno">
+            <div class="contorno-img">
+                <img class="imagen" src="assets/images/1.jpg" alt="">
+            </div>
+            <div class="contorno-img">
+                <img class="imagen" src="assets/images/2.jpg" alt="">
+            </div>
+            <div class="contorno-img">
+                <img class="imagen" src="assets/images/3.jpg" alt="">
+                <div class="boton" onclick="mostrarUbicacion()">Mostrar Ubicación</div> 
+                <script> function mostrarUbicacion() { 
+                    const latitud = -34.441830766182335; const longitud = -58.66155247335831; 
+                    const url = `https://www.google.com/maps?q=${latitud},${longitud}&z=15&output=embed`; 
+                    window.open(url, '_blank'); 
+                    } 
+                </script>
+            </div>
+            <div class="contorno-img">
+                <img class="imagen" src="assets/images/4.jpg" alt="">
+                <script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script><a data-type="countdown" data-id="6359050" class="tickcounter" title="My countdown" href="//www.tickcounter.com/">My countdown</a>
+            </div>
+            <div class="contorno-img">
+                <img class="imagen" src="assets/images/5.jpg" alt="">
+            </div>
+            <div class="contorno-img">
+                <img class="imagen" src="assets/images/6.jpg" alt="">
+            </div>
+            <div class="contorno-img">
+                <img class="imagen" src="assets/images/7.jpg" alt="">
+                <button class="boton2" onclick="mostrarDatos()">Datos cuenta bancaria</button> 
+            </div>
+            <script> 
+                function mostrarDatos() { 
+                    const datosCuentaBancaria = 
+                    ` Número de cuenta: CA $ 18876150762177 
+                    Banco: Banco Nacion
+                    CBU: 0110615830061507621779 
+                    Alias: BODA.GYN.ABEJAS `; 
+                    alert(datosCuentaBancaria);
+                } 
+            </script>
+        </div>
+    </div>
+</body>
+</html>

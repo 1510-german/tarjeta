@@ -1,0 +1,122 @@
+* {padding: 0; 
+    margin: 0;}
+.contornofull {
+    width: 100%;
+    justify-items: center;
+    background-color: rgb(32, 30, 30);
+}
+.contorno { 
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 900px;
+    justify-content: center;
+} 
+.contorno-img { 
+    position: relative; 
+    margin: 10px; 
+    width: 800px;
+    justify-items: center;
+    background-color: rgb(200, 235, 246);
+} 
+.imagen { 
+    display: block; 
+    width: 780px; 
+    height: auto;
+} 
+.boton { 
+    position: absolute; 
+    bottom: 200px; 
+    left: 400px; 
+    color: white; 
+    font-size: 30px; 
+    font-weight: bold; 
+    background-color: rgba(19, 88, 19, 0.5); 
+    padding: 5px; 
+    border-radius: 20px; 
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);;
+}
+.boton:hover {
+    background-color:  rgb(200, 235, 246);
+    color: rgb(9, 63, 17);
+}
+.boton2 { 
+    position: absolute; 
+    bottom: 470px; 
+    left: 300px; 
+    color: white; 
+    font-size: 30px; 
+    font-weight: bold; 
+    background-color: rgba(19, 88, 19, 0.5); 
+    padding: 5px; 
+    border-radius: 20px; 
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);;
+}
+.boton2:hover {
+    background-color:  rgb(200, 235, 246);
+    color: rgb(9, 63, 17);
+}
+.tickcounter {
+    display:grid; 
+    width:100%; 
+    bottom: 550px; 
+    position:absolute; 
+    z-index: 10;
+}
+@media (max-width: 768px) { 
+    .contornofull .contorno {
+        width: 100%;
+    }
+    .contorno-img { 
+        margin: 3px; 
+        width: 100%;
+    } 
+    .imagen { 
+        width: 100%;
+    } 
+    .boton { 
+        bottom: 200px; 
+        left: 370px; 
+        font-size: 25px;
+        padding: 10px; 
+    } 
+    .boton2 { 
+        bottom: 400px;
+        left: 270px;
+        font-size: 25px;
+        padding: 10px;
+    } 
+    .tickcounter {
+        width:80%; 
+        bottom: 440px;
+    }
+}
+@media (max-width: 600px) { 
+    .contornofull .contorno {
+        width: 100%;
+    }
+    .contorno-img { 
+        margin: 3px; 
+        width: 100%;
+    } 
+    .imagen { 
+        width: 100%;
+    } 
+    .boton { 
+        bottom: 60px; 
+        left: 90px; 
+        font-size: 20px;
+        padding: 10px; 
+    } 
+    .boton2 { 
+        bottom: 200px;
+        left: 70px;
+        font-size: 20px;
+        padding: 10px;
+    } 
+    .tickcounter {
+        width:80%; 
+        bottom: 200px;
+    }
+}
