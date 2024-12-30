@@ -19,6 +19,7 @@
     background-color: rgb(200, 235, 246);
 } 
 .imagen { 
+    position: relative;
     display: block; 
     width: 780px; 
     height: auto;
