@@ -24,6 +24,13 @@
                     window.open(url, '_blank'); 
                     } 
                 </script>
+                <div class="boton0" onclick="mostrarUbicacion()">Ubicación Civil</div> 
+                <script> function mostrarUbicacion() { 
+                    const latitudc = -34.49460345057348; const longitudc = -58.63272413611924; 
+                    const url = `https://www.google.com/maps?q=${latitudc},${longitudc}&z=15&output=embed`; 
+                    window.open(url, '_blank'); 
+                    } 
+                </script>
             </div>
             <div class="contorno-img">
                 <img class="imagen" src="assets/images/4.jpg" alt="">
